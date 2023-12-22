@@ -682,7 +682,7 @@ void ConsoleInput() {
 		if (it != commandMap.end()) {
 			// Execute the command
 			it->second.execute();
-			break; // Break out of the loop if a valid command is processed
+			 continue; // process the valid command and prompt for input again
 		}
 		else {
 			ConsoleTools::ConsoleWrite("Command Not found. Type help for command list.");
