@@ -608,6 +608,27 @@ void UnlockLevels()
 	}
 }
 
+
+void LoadCheatMenu()
+{
+	auto instances = CG::UObject::FindObjects<CG::UThumperGameManager>();
+	if (!instances.empty())
+	{
+		for (auto& mods : instances)
+		{
+			if (mods != nullptr)
+			{
+				if (mods->SaveGameData != nullptr)
+				{
+					mods->LoadCheatMenu();
+				}
+			}
+		}
+	}
+}
+
+
+
 void ExecutorThread()
 {
 	while (true)
@@ -658,6 +679,7 @@ void initializeCommands() {
 	commandMap["unlimitedpower"] = Command("unlimitedpower", "Freezes power to 100% always.", UnlimitedPowerCommand);
 	commandMap["logevents"] = Command("logevents", "Expose all ProcessEvent functions in console.", LogEventsCommand);
 	commandMap["unlocklevels"] = Command("unlocklevels", "Unlocks all levels.", UnlockLevelsCommand);
+	//commandMap["loadcheatmenu"] = Command("loadcheatmenu", "Loads the cheat menu.", LoadCheatMenu); Crashes Game.
 }
 
 
