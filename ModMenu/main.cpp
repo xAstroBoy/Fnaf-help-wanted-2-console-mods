@@ -567,7 +567,7 @@ void SetPowerInOffice()
 		{
 			if (mods != nullptr)
 			{
-				mods->PowerRemaining = static_cast<float>(101);
+				mods->PowerRemaining = static_cast<float>(99.0);
 			}
 		}
 	}
