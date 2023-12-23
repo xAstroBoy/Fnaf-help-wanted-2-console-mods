@@ -1,4 +1,3 @@
-
 #include "Cheats.h"
 #include "ConsoleUtils.h"
 #include "ProcessEventLogger.h"
@@ -8,7 +7,6 @@
 
 namespace ConsoleCmd
 {
-
 	std::unordered_map<std::string, InputCmd> commandMap;
 
 	void HelpCommand() {
@@ -71,5 +69,4 @@ namespace ConsoleCmd
 			}
 		}
 	}
-
 }

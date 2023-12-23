@@ -24,4 +24,3 @@ private:
 	std::string description;
 	std::function<void()> action;
 };
-

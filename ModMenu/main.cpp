@@ -22,16 +22,8 @@
 #include "ProcessEventLogger.h"
 #include "StringUtils.h"
 
-
-
 typedef void(__thiscall* ProcessEvent)(CG::UObject*, CG::UFunction*, void*);
 ProcessEvent oProcessEvent;
-
-
-
-
-
-
 
 void HkProcessEvent(CG::UObject* thiz, CG::UFunction* function, void* parms)
 {

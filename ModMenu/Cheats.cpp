@@ -3,18 +3,9 @@
 #include "includes.h"
 #include "SDK.h"
 
-
 namespace Cheats
 {
 	bool UnlimPower = false;
-
-
-
-
-
-
-
-
 
 	void SetPowerInOffice()
 	{
@@ -82,8 +73,6 @@ namespace Cheats
 		}
 	}
 
-
-
 	void CheatExecutorThread()
 	{
 		while (true)
@@ -98,5 +87,4 @@ namespace Cheats
 			catch (...) {}
 		}
 	}
-
 }

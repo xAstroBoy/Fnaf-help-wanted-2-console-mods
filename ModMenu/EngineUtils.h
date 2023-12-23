@@ -7,6 +7,4 @@ namespace EngineUtils
 	CG::ULocalPlayer* GetActiveLocalPlayer();
 	CG::APlayerController* GetActivePlayerController();
 	void SpawnCheatManager(CG::APlayerController* Pc);
-
 }
-
