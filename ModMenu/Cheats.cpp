@@ -6,8 +6,14 @@
 
 namespace Cheats
 {
-
 	bool UnlimPower = false;
+
+
+
+
+
+
+
 
 
 	void SetPowerInOffice()
@@ -73,6 +79,23 @@ namespace Cheats
 					}
 				}
 			}
+		}
+	}
+
+
+
+	void CheatExecutorThread()
+	{
+		while (true)
+		{
+			try {
+				if (UnlimPower)
+				{
+					SetPowerInOffice();
+					SetPowerRoxyTalkie();
+				}
+			}
+			catch (...) {}
 		}
 	}
 

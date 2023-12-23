@@ -15,4 +15,5 @@ namespace Cheats
 	void SetPowerRoxyTalkie();
 	void UnlockLevels();
 	void LoadCheatMenu();
+	void CheatExecutorThread();
 }

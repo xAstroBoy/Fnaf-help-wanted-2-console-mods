@@ -28,20 +28,7 @@ typedef void(__thiscall* ProcessEvent)(CG::UObject*, CG::UFunction*, void*);
 ProcessEvent oProcessEvent;
 
 
-void ExecutorThread()
-{
-	while (true)
-	{
-		try {
-			if (Cheats::UnlimPower)
-			{
-				Cheats::SetPowerInOffice();
-				Cheats::SetPowerRoxyTalkie();
-			}
-		}
-		catch (...) {}
-	}
-}
+
 
 
 
@@ -161,7 +148,7 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 	bool init_hook = false;
 	do
 	{
-		std::thread executor(ExecutorThread);
+		std::thread executor(Cheats::CheatExecutorThread);
 		executor.detach();
 
 		std::thread ProcessEventHookThread(StartProcessEventHook);
