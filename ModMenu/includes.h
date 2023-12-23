@@ -5,7 +5,6 @@
 #include "kiero/kiero.h"
 #include "kiero/minhook/include/MinHook.h"
 #include "ConsoleUtils.h"
-#include "CheatsCode.h"
 
 
 

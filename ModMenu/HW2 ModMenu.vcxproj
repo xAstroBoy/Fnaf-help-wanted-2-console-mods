@@ -161,19 +161,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CheatsCode.h" />
+    <ClInclude Include="Cheats.h" />
+    <ClInclude Include="ConsoleCmd.h" />
     <ClInclude Include="ConsoleUtils.h" />
+    <ClInclude Include="EngineUtils.h" />
     <ClInclude Include="framework.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cheats.cpp" />
+    <ClCompile Include="ConsoleCmds.cpp" />
+    <ClCompile Include="InputCmd.cpp" />
     <ClCompile Include="ConsoleUtils.cpp" />
+    <ClCompile Include="EngineUtils.cpp" />
+    <ClCompile Include="ProcessEventLogger.cpp" />
+    <ClCompile Include="StringUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dllmain.h" />
+    <ClInclude Include="InputCmd.h" />
     <ClInclude Include="mem.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ProcessEventLogger.h" />
     <ClInclude Include="SDK.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringUtils.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
