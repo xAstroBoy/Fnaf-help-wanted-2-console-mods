@@ -10,7 +10,7 @@ namespace ConsoleCmd
 	std::unordered_map<std::string, InputCmd> commandMap;
 
 	void HelpCommand() {
-		ConsoleTools::ConsoleWrite("Mod Console Available commands:");
+		ConsoleTools::ConsoleWrite("Available commands:");
 		for (const auto& entry : commandMap) {
 			ConsoleTools::ConsoleWrite(entry.second.getName() + " - " + entry.second.getDescription());
 		}
